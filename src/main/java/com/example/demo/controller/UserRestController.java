@@ -15,15 +15,10 @@ public class UserRestController {
     public UserRestController() {
     }
 
-    /**
-     * 사번을 리턴하는 API
-     *
-     * @return
-     */
     @GetMapping
     public ResponseEntity<String> getUserId() {
         try {
-            return ResponseEntity.ok("82256963");
+            return ResponseEntity.ok("82187227");
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
